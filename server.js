@@ -13,7 +13,7 @@ const app = express();
 const port = 3001;
 
 app.use(express.json())
-app.use(cors({ origin: 'https://candid-cactus-34cd32.netlify.app/' }));
+app.use(cors({ origin: 'https://sage-semifreddo-17de9e.netlify.app/' }));
 
 
 
