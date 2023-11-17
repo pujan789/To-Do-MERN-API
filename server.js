@@ -6,6 +6,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 import mongoose from 'mongoose';
 import cors from "cors";
 import Todo from "./models/Todo.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const port = 3001;
@@ -13,7 +15,9 @@ const port = 3001;
 app.use(express.json())
 app.use(cors({ origin: 'http://localhost:3000' }));
 
-mongoose.connect("mongodb://127.0.0.1:27017/mern-todo").then(() => console.log("connected to db"))
+
+
+mongoose.connect(`${process.env.MONGODB_URL}`).then(() => console.log("connected to db"))
 .catch(console.error)
 
 
