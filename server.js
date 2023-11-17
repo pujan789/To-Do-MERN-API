@@ -13,7 +13,8 @@ const app = express();
 const port = 3001;
 
 app.use(express.json())
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://6557399b22ce8c025206d017--candid-cactus-34cd32.netlify.app' }));
+
 
 
 
