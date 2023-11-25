@@ -13,7 +13,8 @@ const app = express();
 const port = 3001;
 
 app.use(express.json())
-app.use(cors({ origin: 'https://sage-semifreddo-17de9e.netlify.app/' }));
+app.use(cors({ origin: 'http://localhost:3000/' }));
+
 
 
 
